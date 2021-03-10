@@ -46,4 +46,5 @@ and go to Bitwarden's web vault, tools -> import, choose "Bitwarden
 json" and pick the file.  It takes a little while if you have a lot of
 entries.
 
-Don't forget to securely delete the temporary directory when you're done.
+Don't forget to securely delete the dump file and the temporary
+directory when you're done.
