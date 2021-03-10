@@ -30,13 +30,17 @@ This exporter keeps the "unfiled items go under the `No Folder` folder" aspect, 
 
 First, prepare by dumping all your passwords from gnu pass to a temporary directory on disk with something like
 
+```
 % mkdir -p root && cd root
 % ( cd $PASSWORD_STORE_DIR && find . \! -path \*.git\* -a -type d ) | sed -e 's#^./##' | while read d; do mkdir -p $d; done
 % ( cd $PASSWORD_STORE_DIR && find . -type f -name \*.gpg ) | sed -e 's#^./##' -e 's#\.gpg$##' | sort | while read fname; do echo $fname; pass ${fname} > ${fname}; done
+```
 
 Then run this file on the dumped output
 
+```
 % python gather.py > ~/Downloads/bitwarden_import.json
+```
 
 and go to Bitwarden's web vault, tools -> import, choose "Bitwarden
 json" and pick the file.  It takes a little while if you have a lot of
