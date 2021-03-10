@@ -47,6 +47,7 @@ for dir_name, subdir_list, file_list in os.walk('root'):
         folder_id = str(uuid.uuid4())
         folders.append({"name": dir_name[5:], "id": folder_id})
     else:
+        # Gets filed under "No Folder"
         folder_id = None
 
     for fname in file_list:
