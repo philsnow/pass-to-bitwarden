@@ -4,7 +4,7 @@ I didn't like any of the suggestions I could find online for moving from gnu pas
 
 This tool assumes you're going to copy everything out of gnu pass into
 bitwarden.  It only creates bitwarden 'login' items.  If you have a
-ton of credit cards or secure notes or whatever, yuo'll want to
+ton of credit cards or secure notes or whatever, you'll want to
 change it so it generates bitwarden's JSON correctly.  See [here](https://bitwarden.com/help/article/condition-bitwarden-import/#condition-a-json) for some more details.
 
 ## exported structure
